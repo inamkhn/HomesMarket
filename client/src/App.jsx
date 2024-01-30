@@ -8,7 +8,7 @@ import Signin from "./pages/Signin";
 import Profile from "./pages/Profile";
 import ProtectRoute from "./components/ProtectRoute";
 import Listing from "./pages/Listing";
-import AllListings from "./pages/allListings";
+import AllListings from "./pages/AllListings";
 import UpdateListing from "./pages/UpdateListing";
 import SigleListing from "./pages/SigleListing";
 import SearchPage from "./pages/Search";
