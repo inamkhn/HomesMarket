@@ -10,6 +10,7 @@ import userRouter from './Routers/userRoute.js'
 import authRouter from './Routers/authRoute.js'
 import listingRouter from './Routers/listingRoute.js'
 
+
 dotenv.config()
 
 const app = express()
@@ -26,7 +27,6 @@ const __dirname = path.resolve();
 app.use("/api/v1",userRouter)
 app.use("/api/v1",authRouter)
 app.use("/api/v1",listingRouter)
-
 
 app.use(express.static(path.join(__dirname, '/client/dist')));
 

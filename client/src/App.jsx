@@ -24,14 +24,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/sign-up" element={<Signup />} />
           <Route path="/sign-in" element={<Signin />} />
-          {/* <Route element={<ProtectRoute />}> */}
+          <Route path="/single-listing/:id" element={<SigleListing />} />
+          <Route path="/search" element={<SearchPage/>} />
+          <Route path="/all-listings" element={<AllListings />} />
+          <Route element={<ProtectRoute />}>
             <Route path="/profile" element={<Profile />} />
-            <Route path="/listing" element={<Listing />} />
-            <Route path="/all-listings" element={<AllListings />} />
+            <Route path="/listing" element={<Listing />} /> 
             <Route path="/update-listing/:id" element={<UpdateListing />} />
-            <Route path="/single-listing/:id" element={<SigleListing />} />
-            <Route path="/search" element={<SearchPage/>} />
-          {/* </Route> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

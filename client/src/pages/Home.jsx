@@ -14,7 +14,7 @@ const Home = () => {
   const [offerListings, setOfferListings] = useState([]);
   const [saleListings, setSaleListings] = useState([]);
   const [rentListings, setRentListings] = useState([]);
-  console.log(saleListings)
+  // console.log(saleListings)
   SwiperCore.use([Navigation]);
   useEffect(() => {
     const fetchOfferListings = async () => {
@@ -72,7 +72,7 @@ const Home = () => {
 
       {/* swiper */}
       {/* <Swiper navigation>
-        {offerListings.imageUrls.map((url) => (
+        {saleListings.imageUrls.map((url) => (
           <SwiperSlide key={url}>
             <div
               className="h-[400px]"
@@ -84,6 +84,21 @@ const Home = () => {
           </SwiperSlide>
         ))}
       </Swiper> */}
+      
+         <Swiper navigation>
+            {saleListings[0]?.imageUrls?.map((url) => (
+              <SwiperSlide key={url}>
+                <div
+                  className="h-[400px]"
+                  style={{
+                    background: `url(${url}) center no-repeat`,
+                    backgroundSize: "cover",
+                  }}
+                ></div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
 
       {/* listing results for offer, sale and rent */}
 
@@ -136,9 +151,9 @@ const Home = () => {
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
-                to={"/search?type=sale"}
+                // to={"/search?type=sale"}
               >
-                Show more places for sale
+                Show more places for sale  
               </Link>
             </div>
             <div className="flex flex-wrap gap-4">

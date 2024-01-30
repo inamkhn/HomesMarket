@@ -52,9 +52,9 @@ const Header = () => {
     <div className="">
       <div className="navbar flex items-center bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">RealeState</a>
+          <Link to="/"><a className="btn btn-ghost text-xl">HomesMarket</a></Link>
         </div>
-        <div className="flex items-center space-x-2 mr-6">
+        <div className="flex items-center space-x-2 mr-6 font-medium">
           <Link to="/">
             <p>Home</p>
           </Link>
