@@ -143,48 +143,9 @@ const Siglelist = () => {
                 Contact landlord
               </button>
             )}
-            {/* <di>
+            <di>
             <Contact listing={listing} />
-            </di> */}
-
-            <div>
-              {/* The button to open modal */}
-              <a href="#my_modal_8" className="btn">
-                open modal
-              </a>
-              {/* Put this part before </body> tag */}
-              <div className="modal" role="dialog" id="my_modal_8">
-                <div className="modal-box">
-                  <div className="scroll-m-1">
-                    <h3 className="font-bold text-lg">Chat</h3>
-                    <div className="">
-                      <p className="py-3">This modal works with anchor links</p>
-                    </div>
-                    <div className="text text-right">
-                      <p className="py-3">This modal works with anchor links</p>
-                      <p className="py-3">This modal works with anchor links</p>
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="flex justify-between">
-                      <div>
-                        <input
-                          type="text"
-                          placeholder="Type here"
-                          className="input input-bordered w-96 h-10 max-w-xs"
-                        />
-                        <button>
-                          <IoIosSend className="text-3xl ml-2 " />
-                        </button>
-                      </div>
-                      <a href="#" className="btn text-red-500">
-                        <IoIosExit/>Exit
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </di>
           </div>
         </div>
       )}
