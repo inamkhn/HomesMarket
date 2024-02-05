@@ -14,7 +14,7 @@ import listingRouter from './Routers/listingRoute.js'
 const corsOptions ={
   origin:'http://localhost:5173', 
   credentials:true,            
-  "access-control-allow-credentials":true,
+  "access-control-allow-Origin":true,
   optionSuccessStatus:200
 }
 
