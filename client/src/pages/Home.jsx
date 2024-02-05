@@ -19,7 +19,12 @@ const Home = () => {
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/v1/get/sas?offer=true&limit=4`);
+        const res = await axios.get(`http://localhost:5000/api/v1/get/sas?offer=true&limit=4`,{
+          headers:{
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "http://localhost:5000"
+          }
+        });
         setOfferListings(res.data);
         fetchRentListings();
       } catch (error) {
