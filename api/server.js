@@ -11,13 +11,6 @@ import authRouter from './Routers/authRoute.js'
 import listingRouter from './Routers/listingRoute.js'
 
 
-const corsOptions ={
-  origin:'http://localhost:5173', 
-  credentials:true,            
-  "access-control-allow-Origin":true,
-  optionSuccessStatus:200
-}
-
 dotenv.config()
 
 const app = express()
@@ -27,7 +20,7 @@ dotenv.config()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cookieParser())
-app.use(cors(corsOptions))
+app.use(cors())
 
 const __dirname = path.resolve();
 
